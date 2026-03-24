@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 body {
-background-image: url(foto-baixada); /*baixar um foto para fundo*/
+background-image: url(download.jpeg); /*baixar um foto para fundo*/
 background-size: cover;
 /* preenche todo espaço */
 background-position: center;
