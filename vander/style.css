@@ -1,67 +1,114 @@
-*{
-margin:0;
-padding:0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-background-image: url(download.jpeg); /*baixar um foto para fundo*/
-background-size: cover;
-/* preenche todo espaço */
-background-position: center;
-/* centraliza imagem */
-height: 100vh;
-/* altura tela */
-/*deixa caixa no centro*/
-display: flex;
-align-items: center;
-justify-content:center;
+    background-image: url(download.jpeg);
+    /*baixar um foto para fundo*/
+    background-size: cover;
+    /* preenche todo espaço */
+    background-position: center;
+    /* centraliza imagem */
+    height: 100vh;
+    /* altura tela */
+    /*deixa caixa no centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .tradução {
-padding: 15px;
-background-color: #ee0a0a1a;
+    padding: 15px;
+    background-color: #ee0a0a1a;
 }
+
 .traducao {
-font-size: 18px;/*modificar */
-color: #ffffff99;
-/*modificar*/
+    font-size: 18px;
+    /*modificar */
+    color: #ffffff99;
+    /*modificar*/
 }
+
 .titulo-traducao {
-color: #ffffff99;
-font-size: 14px;
-margin-bottom: 10px;
-border-radius: 15px;
+    color: #ffffff99;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
+
 .caixaApp {
-background-color: rgb(39, 163, 235); /*modificar*/
-width:450px; /*modificar*/
-padding: 35px; /*modificar*/
-border-radius: 25px;
+    background-color: rgb(157, 39, 235);
+    /*modificar*/
+    width: 450px;
+    /*modificar*/
+    padding: 35px;
+    /*modificar*/
+    border-radius: 25px;
 }
 
-.texto{
-width:100%;
-height: 100px;
-border:none;
-outline: none;/* borda quando clica*/
-background-color: #f0a8f7; /*modificar*/
-color: rgb(0, 0, 0);/*cor do texto modificar*/
-padding:15px;/*modificar espaço interno*/
+.texto {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    /* borda quando clica*/
+    background-color: #f0a8f7;
+    /*modificar*/
+    color: rgb(0, 0, 0);
+    /*cor do texto modificar*/
+    padding: 15px;
+    /*modificar espaço interno*/
 }
 
 
 .tradução {
-padding: 15px;
-background-color: #ff00001a;
+    padding: 15px;
+    background-color: #ff00001a;
 }
+
 .traducao {
-font-size: 18px;/*modificar */
-color: #ffffff99;
-/*modificar*/
+    font-size: 18px;
+    /*modificar */
+    color: #ffffff99;
+    /*modificar*/
 }
+
 .titulo-traducao {
-color: #ff000099;
-font-size: 14px;
-margin-bottom: 10px;
-border-radius: 15px;
+    color: #00000099;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.caixa-interna {
+    display: flex;
+    align-items: center;/*centraliza verticalmente*/
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.idioma {
+    width: 100%;
+    border: none;
+    padding: 10px;/*mudar a gosto*/
+    background-color: rgb(1, 153, 255);
+    color:rgb(211, 207, 210);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(1, 153, 255);
+    border: none;
+    cursor: pointer;
+    color: #522bff99;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+button:hover {
+    opacity: 0.5;
 }
