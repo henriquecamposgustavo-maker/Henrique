@@ -46,6 +46,8 @@ body {
     padding: 35px;
     /*modificar*/
     border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+     /*sombra da caixa modificar*/
 }
 
 .texto {
@@ -84,7 +86,8 @@ body {
 
 .caixa-interna {
     display: flex;
-    align-items: center;/*centraliza verticalmente*/
+    align-items: center;
+    /*centraliza verticalmente*/
     gap: 10px;
     margin: 20px auto;
 }
@@ -92,9 +95,10 @@ body {
 .idioma {
     width: 100%;
     border: none;
-    padding: 10px;/*mudar a gosto*/
+    padding: 10px;
+    /*mudar a gosto*/
     background-color: rgb(1, 153, 255);
-    color:rgb(211, 207, 210);
+    color: rgb(211, 207, 210);
     border-radius: 20px;
     outline: none;
     cursor: pointer;
@@ -111,4 +115,10 @@ button {
 
 button:hover {
     opacity: 0.5;
+}
+
+/* para nao ficar branco quando clica nos idiomas */
+idioma option {
+background-color: rgb(58, 55, 55);/*mudar*/
+color: rgb(230, 230, 234);/*mudar*/
 }

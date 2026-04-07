@@ -10,7 +10,21 @@ let url="https://api.mymemory.translated.net/get?q=" + inputTexto.value + "&lang
 let resposta = await fetch(url);
 
 let traducao = await resposta.json();
+console.log(traducao);
 
 traducaoSaida.textContent=traducao.responseData.
 translatedText;
+}
+
+function microfone(){
+   // classe
+   let voz = window.SpeechRecognition || window.webkitSpeechRecognition;
+   // instanciando (construir)
+   let ouvirVoz = new voz();
+
+ouvirVoz.onresult = (evento) => {
+   inputTexto.value = evento.results[0][0].transcript;
+}
+ouvirVoz.start();
+
 }
